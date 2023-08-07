@@ -1,0 +1,254 @@
+/* css reset */
+body{
+    background-color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+/* Navigation bar:logo and image */
+#logo{
+    margin: 3px 6px;
+}
+#logo img{
+    height: 80px;
+    margin: 10px 10px;
+}
+#logo img:hover{
+    transform: rotate(360deg);
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+/* #Navigation Bar: List Styling*/
+#navbar ul{
+    display: flex;
+    font-family: 'Pangolin', cursive;
+
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{ 
+   color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li .active{
+    color: white;
+    background-color: rgb(222, 74, 74);
+    border: 2px solid white;
+}
+#navbar ul li a:hover{ 
+    color: white;
+    background-color: rgb(222, 74, 74);
+    border: 2px solid white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 403px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background:url('../background1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Pangolin', cursive;
+}
+/*Services section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    background-color: rgb(229, 212, 190);
+    height: 400px;
+    width: 900px;
+    margin: 13px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgb(145, 110, 46);
+}
+#services .box img{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+
+}
+#services .box img:hover{
+    transform: scale(1.4);
+}
+
+
+/* Client Section */
+
+#client-section{
+   
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url('../background3.webp') no-repeat center center/cover;
+   width: 100%;
+   height: 50%;
+   z-index: -1;
+   opacity: 0.6;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 134px;
+
+}
+#clients img:hover{
+    transform: rotate(360deg);
+    transition-duration: .5s;
+    transition-delay: .2s;
+    transition-timing-function: ease-in-out;
+}
+.client-item{
+    padding: 34px;
+    /* margin: 23px; */
+}
+/* Contact Section */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact-us.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(235, 225, 215);
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Pangolin', cursive;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 10px;
+}
+/* Utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Pangolin', cursive;
+
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Pangolin', cursive;
+
+}
+.center{
+    font-family: 'Dancing Script', cursive;
+
+}
+#services .box p{
+    font-size: 23px;
+}
+.btn{
+    padding: 6px 20px;
+    margin: 25px;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(222, 74, 74);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Pangolin', cursive;
+    cursor:pointer;
+
+    
+}
+.btn:hover{
+    /* background-color: rgb(135, 100, 60); */
+    background-color: rgb(233, 204, 152);
+    color: black;
+    border: 2px solid black;
+}
+.center{
+    text-align: center;
+}
